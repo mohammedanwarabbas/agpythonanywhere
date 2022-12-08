@@ -1,0 +1,261 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<!--single-carousel(sc) starts-->
+<div id="sc" class="container">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image:url('{% static 'img/carousel-1.jpg' %}');">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image:url('{% static 'img/carousel-2.jpg' %}');">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image:url('{% static 'img/carousel-3.jpg' %}');">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+<!--carousel end-->
+
+<!--multiple-items-owl-corousel starts-->
+<div id="multicarousel" class="container my-5">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="section-header text-center pb-5">
+                <h2>Our Services</h2>
+            </div>
+        </div>
+    </div>
+    <div class="owl-carousel owl-theme pb-0">
+        <div class="item">
+            <div class="card text-white text-center bg-dark pb-2"
+                style="background-image: url('{% static 'img/service-1.jpg' %}');background-repeat:no-repeat;background-size:cover;">
+                <div class="card-body">
+                    <h3 class="card-title"
+                        style="background-color: rgba(0,0,0,0.6);border-top-color: orange;border-top-width: 0.3vw;border-top-style: solid;">
+                        Ayush Events</h3>
+                    <!-- <p class="lead">Lorem ipsum</p> -->
+                    <p class="bi bi-calendar2-event display-1 p-3 m-2" style="background-color: rgba(0,0,0,0.5); "></p>
+                    <button class="btn bg-warning text-dark">Read More</button>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="card text-white text-center bg-dark pb-2"
+                style="background-image: url('{% static 'img/service-2.jpg' %}');background-repeat:no-repeat;background-size:cover;">
+                <div class="card-body">
+                    <h3 class="card-title"
+                        style="background-color: rgba(0,0,0,0.6);border-top-color: orange;border-top-width: 0.3vw;border-top-style: solid;">
+                        Home Products</h3>
+                    <!-- <p class="lead">Lorem ipsum</p> -->
+                    <p class="bi bi-cup-straw display-1 p-3 m-2" style="background-color: rgba(0,0,0,0.5); "></p>
+                    <button class="btn bg-warning text-dark">Read More</button>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="card text-white text-center bg-dark pb-2"
+                style="background-image: url('{% static 'img/service-3.jpg' %}');background-repeat:no-repeat;background-size:cover;">
+                <div class="card-body">
+                    <h3 class="card-title"
+                        style="background-color: rgba(0,0,0,0.6);border-top-color: orange;border-top-width: 0.3vw;border-top-style: solid;">
+                        Ayush Chicken</h3>
+                    <!-- <p class="lead">Lorem ipsum</p> -->
+                    <p class="display-1 p-3 m-2"
+                        style="background-color: rgba(0,0,0,0.5);background-image: url('{% static 'img/chicken-icon.png' %}');background-size: contain;background-repeat: no-repeat;background-position: center 0%;">
+                        <span class="bi bi-cup-straw" style="visibility:hidden;"></span>
+                    </p>
+                    <button class="btn bg-warning text-dark">Read More</button>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="card text-white text-center bg-dark pb-2"
+                style="background-image:url('{% static 'img/service-4.jpg' %}');background-repeat:no-repeat;background-size:cover;">
+                <div class="card-body">
+                    <h3 class="card-title"
+                        style="background-color: rgba(0,0,0,0.6);border-top-color: orange;border-top-width: 0.3vw;border-top-style: solid;">
+                        Tours and Travels</h3>
+                    <!-- <p class="lead">Lorem ipsum</p> -->
+                    <p class="display-1 p-3 m-2"
+                        style="background-color: rgba(0,0,0,0.5);background-image: url('{% static 'img/bus-icon.png' %}');background-size: contain;background-repeat: no-repeat;background-position: center 0%;">
+                        <span class="bi bi-cup-straw" style="visibility:hidden;"></span>
+                    </p>
+                    <button class="btn bg-warning text-dark">Read More</button>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="card text-white text-center bg-dark pb-2"
+                style="background-image: url('{% static 'img/service-5.jpg' %}');background-repeat:no-repeat;background-size:cover;">
+                <div class="card-body">
+                    <h3 class="card-title"
+                        style="background-color: rgba(0,0,0,0.6);border-top-color: orange;border-top-width: 0.3vw;border-top-style: solid;">
+                        Coffee Bar</h3>
+                    <!-- <p class="lead">Lorem ipsum</p> -->
+                    <p class="display-1 p-3 m-2"
+                        style="background-color: rgba(0,0,0,0.5);background-image: url('{% static 'img/coffee-icon.png' %}');background-size: contain;background-repeat: no-repeat;background-position: center 0%;">
+                        <span class="bi bi-cup-straw" style="visibility:hidden;"></span>
+                    </p>
+                    <button class="btn bg-warning text-dark">Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--multiple-items-owl-corousel end-->
+
+<!--why-us starts-->
+<section id="whyus" class="my-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-header text-center pb-5">
+                    <h2>Why us</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="image col-lg-6" style="background-image: url('https://source.unsplash.com/random/?business');">
+            </div>
+            <div class="col-lg-6">
+                <div class="icon-box mt-5 mt-lg-0">
+
+                    <h4><span class="material-icons">groups</span> Advanced Team</h4>
+                    <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                </div>
+                <div class="icon-box mt-5">
+
+                    <h4><span class="material-icons">schedule</span> Services on Time</h4>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                </div>
+                <div class="icon-box mt-5">
+
+                    <h4><span class="material-icons">currency_rupee</span> Services at reasonable price</h4>
+                    <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                </div>
+                <div class="icon-box mt-5">
+
+                    <h4><span class="material-icons">thumb_up_alt</span> Quality Services</h4>
+                    <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--why-us end-->
+
+<!-- team starts -->
+<section class="team section-padding" id="team">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-header text-center pb-5">
+                    <h2>Our Team</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit. Non, quo.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <img src="{% static 'img/team-1.jpg' %}" alt="" class="img-fluid rounded-circle">
+                        <h3 class="card-title py-2">Jack Wilson</h3>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsam
+                            nostrum illo tempora esse quibusdam.</p>
+
+
+                        <p class="socials">
+                            <i class="bi bi-twitter text-dark mx-1"></i>
+                            <i class="bi bi-facebook text-dark mx-1"></i>
+                            <i class="bi bi-linkedin text-dark mx-1"></i>
+                            <i class="bi bi-instagram text-dark mx-1"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <img src="{% static 'img/team-2.jpg' %}" alt="" class="img-fluid rounded-circle">
+                        <h3 class="card-title py-2">Jack Wilson</h3>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsam
+                            nostrum illo tempora esse quibusdam.</p>
+                        <p class="socials">
+                            <i class="bi bi-twitter text-dark mx-1"></i>
+                            <i class="bi bi-facebook text-dark mx-1"></i>
+                            <i class="bi bi-linkedin text-dark mx-1"></i>
+                            <i class="bi bi-instagram text-dark mx-1"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <img src="{% static 'img/team-3.jpg' %}" alt="" class="img-fluid rounded-circle">
+                        <h3 class="card-title py-2">Jack Wilson</h3>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsam
+                            nostrum illo tempora esse quibusdam.</p>
+                        <p class="socials">
+                            <i class="bi bi-twitter text-dark mx-1"></i>
+                            <i class="bi bi-facebook text-dark mx-1"></i>
+                            <i class="bi bi-linkedin text-dark mx-1"></i>
+                            <i class="bi bi-instagram text-dark mx-1"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <img src="{% static 'img/team-4.jpg' %}" alt="" class="img-fluid rounded-circle">
+                        <h3 class="card-title py-2">Jack Wilson</h3>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsam
+                            nostrum illo tempora esse quibusdam.</p>
+                        <p class="socials">
+                            <i class="bi bi-twitter text-dark mx-1"></i>
+                            <i class="bi bi-facebook text-dark mx-1"></i>
+                            <i class="bi bi-linkedin text-dark mx-1"></i>
+                            <i class="bi bi-instagram text-dark mx-1"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- team ends -->
+{% endblock %}
